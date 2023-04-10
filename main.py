@@ -5,7 +5,6 @@ from anytree import Node, RenderTree, AsciiStyle
 # 1 - read the CSV file  and create a new CSV called nodes file with only the desired columns,
 # like id, area de texto 1
 df = pd.read_csv('data_nodes.csv')
-
 # select only the desired columns
 # CHANGE HERE
 # df = df[['Id', 'Área de texto 1']]
@@ -22,7 +21,6 @@ df = pd.read_csv('data_nodes.csv')
 # CHANGE HERE
 # df.dropna(subset=["Origem da linha", "Destino da linha"], inplace=True)
 df.dropna(subset=["Line Source", "Line Destination"], inplace=True)
-
 # select only the desired columns
 # CHANGE HERE
 # df = df[['Origem da linha', 'Destino da linha']]
@@ -49,6 +47,7 @@ with open('link_nodes.csv', 'w', newline='') as output_file:
     csv_writer.writerow(header_row)
     # write the rest of the data
     csv_writer.writerows(data)
+
 menus = {}
 # read the nodes from the CSV file and create the tree
 with open('nodes.csv', 'r') as csvfile:
@@ -104,9 +103,12 @@ def print_menu(node, indent=""):
         return
     for child in children:
         print(f"\t({child.id}):{child.name} ")
-    choice = input("Select a child node to explore (or 'b' to go back): ")
+    choice = input("Selecione a seguiente opcao ou ('b' para voltar e 'e' pasa sair ): ")
     if choice == 'b':
         return
+    elif choice == 'e':
+        print('saindo...')
+        exit()
     selected_node = None
     for child in children:
         if str(child.id) == choice:
@@ -130,10 +132,14 @@ try:
 
         option = "s"
         if option.lower() == "s":
-            id_node = int(input("Ingrese o numero da pergunta: "))
-            root_node = nodes[id_node]
-            print_menu(root_node)
-        elif option.lower() == 'e':
-            exit()
+            id_node = input("Ingrese o numero da pergunta: ")
+            if id_node.isdigit():
+                id_node = int(id_node)
+                root_node = nodes[id_node]
+                print_menu(root_node)
+            elif id_node == "e":
+                print('saindo...')
+                exit()
+
 except KeyError:
     print("Error: Could not find root node")
