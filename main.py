@@ -7,6 +7,7 @@ from anytree import Node, RenderTree, AsciiStyle
 df = pd.read_csv('data_nodes.csv')
 
 # select only the desired columns
+# CHANGE HERE
 # df = df[['Id', 'Área de texto 1']]
 df = df[['Id', 'Text Area 1']]
 # 1.1 remove all data with NaN values in the "Id" and "Área de texto 1" columns
@@ -18,10 +19,12 @@ df.to_csv('nodes.csv', index=False)
 # with only the desired columns, like origem da linha, destino da linha
 df = pd.read_csv('data_nodes.csv')
 # 2.2 remove all data with NaN values in the "Origem da linha" and "Destino da linha" columns
+# CHANGE HERE
 # df.dropna(subset=["Origem da linha", "Destino da linha"], inplace=True)
 df.dropna(subset=["Line Source", "Line Destination"], inplace=True)
 
 # select only the desired columns
+# CHANGE HERE
 # df = df[['Origem da linha', 'Destino da linha']]
 df = df[["Line Source", "Line Destination"]]
 # save the resulting DataFrame to a new CSV file
