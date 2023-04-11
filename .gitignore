@@ -1,4 +1,9 @@
 backend
-*.csv
 .vscode
 .idea
+tests/.pytest_cache/*
+data_nodes.csv
+link_nodes.csv
+nodes.csv
+out_nodes.csv
+prompt.txt

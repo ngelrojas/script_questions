@@ -15,6 +15,11 @@ source backend/bin/activate
 pip install -r requirements.txt
 ```
 
+#### 4. run the script using
+```shell
+pytest --pyargs tests
+```
+
 #### 4. import .csv file and change name to "data_nodes.csv" put it in the same folder as the script
 #### 5. if you .csv file has a different name headers, change the name in the script, 
 #### in lines show this message # CHANGE HERE
