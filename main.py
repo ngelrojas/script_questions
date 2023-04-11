@@ -5,7 +5,7 @@ from link_nodes import LinkNodes
 from menu import Menu
 
 # load the CSV file
-apex = LoadCsv('data_nodes.csv')
+apex = LoadCsv('data_nodes.csv', 'nodes.csv', 'out_nodes.csv')
 apex.create_nodes()
 apex.create_out_nodes()
 

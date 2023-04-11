@@ -10,7 +10,7 @@ from anytree import Node, RenderTree, AsciiStyle
 def test_create_nodes():
     # create a test node file
     input_data = [['1', 'Node 1'], ['2', 'Node 2']]
-    node_file = 'test_nodes.csv'
+    node_file = 'tests/test_nodes.csv'
     with open(node_file, 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(['Line Source', 'Line Destination'])

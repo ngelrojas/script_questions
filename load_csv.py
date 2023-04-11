@@ -3,8 +3,10 @@ import pandas as pd
 
 class LoadCsv:
 
-    def __init__(self, origen_csv):
+    def __init__(self, origen_csv, node_csv, out_node_csv):
         self.origen_csv = origen_csv
+        self.node_csv = node_csv
+        self.out_node_csv = out_node_csv
 
     def create_nodes(self) -> None:
         """
@@ -18,7 +20,7 @@ class LoadCsv:
         df = pd.read_csv(self.origen_csv)
         df = df[['Id', 'Text Area 1']]
         df.dropna(subset=["Id", "Text Area 1"], inplace=True)
-        df.to_csv('nodes.csv', index=False)
+        df.to_csv(self.node_csv, index=False)
         return None
 
     def create_out_nodes(self) -> None:
@@ -36,5 +38,5 @@ class LoadCsv:
         df = pd.read_csv(self.origen_csv)
         df.dropna(subset=["Line Source", "Line Destination"], inplace=True)
         df = df[["Line Source", "Line Destination"]]
-        df.to_csv('out_nodes.csv', index=False)
+        df.to_csv(self.out_node_csv, index=False)
         return None

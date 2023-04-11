@@ -1,0 +1,76 @@
+Id,Name,Shape Library,Page ID,Contained By,Group,Line Source,Line Destination,Source Arrow,Destination Arrow,Status,Text Area 1,Comments,[r]
+1,Document,,,,,,,,,Draft,Peterinvest chatbot,,
+2,Page,,,,,,,,,,Mapa mental com grupos coloridos,,
+3,Text,Standard,2,,,,,,,,Apresentar as perguntas do nó destino. Se houver menos de 3 perguntas fazer a busca recursiva da raiz.,,
+4,Circle,Mind Mapping,2,,,,,,,,Chatbot,,
+5,Circle,Mind Mapping,2,,,,,,,,Conector,,
+6,Pill,Mind Mapping,2,,,,,,,,Ela distribui dividendos?,,@ativo_dividendo:  “Ela é uma boa pagadora de dividendos pois a empresa distribui em média @div_médio_3anos nos últimos 3 anos. E ela pagou dividendos crescentes nos últimos dez anos. Ela é do setor elétrico o que dá previsibilidade nos dividendos.”
+7,Pill,Mind Mapping,2,,,,,,,,O que é Dividend Yield?,,"emplo se uma ação custa R$ 10,00 e ela pagou nos últimos 12 meses R$ 2,00, ela tem um Dividend Yield de 20%."
+8,Pill,Mind Mapping,2,,,,,,,,"O que é mais importante dividendos ou lucro?
+[R]",,"O lucro é mais importante. A cotação da ação cresce conforme o crescimento dos lucros. Por exemplo, a Apple não paga muitos dividendos, poi ela usa o lucro reinvestir e crescer mais seus lucros, o que reflete na sua cotação. O dividendo é uma parcela dos lucros que pode ser distribuídas."
+9,Pill,Mind Mapping,2,,,,,,,,Porque as pessoas buscam Diviend Yield acima de 6%?,,Por exemplo um título de Tesouri Direto te remunera 6%aa acima da inflação é considerado u ótimo negíio. Quando ela paga 6% de  dividend Yield então é uma taxa muito interessante.
+10,Pill,Mind Mapping,2,,,,,,,,Porque empresas que pagam muito DY tendem a crescer menos do que as que pagam mais?,,"vamos supor que você abra um restaurante de sucess. Você abre vários restaurantes com o lucro, então você não distribui os dividendos. Mas a empresa cresce, cresce o faturameno e o lucro mas você naõ distribui."
+11,Pill,Mind Mapping,2,,,,,,,,Vale a pena comprar ações que pagam menos de 6% de Dividend Yield?,,"Se seu objetivo é receber dividendos, o ideal é ter empresas que pagam mais de 6% de DY. Para outros perfis que querem crescimento de patrimônio mais rápido, é difícil achar empresas que pagam tudo isso de DY."
+12,Pill,Mind Mapping,2,,,,,,,,Porque ver o histórico de lucros é importante?,,Empresa que não dá lucro não é tão segura de se investir. O ideal é ver se a empresa teve lucro nos últimos 7 ou 10 anos e houve aumento nesses lucros.
+13,Pill,Mind Mapping,2,,,,,,,,Pode me mostrar uma comparação entre cotação e lucros?,,Pode me mostrar uma comparação entre cotação e lucros?
+14,Pill,Mind Mapping,2,,,,,,,,Por que normalmente o setor elétrico paga bons dividendos?,,"Os contratos são reajustados pela inflação, o que dá previsibilidade. Dependendo do que a empresa faz, as receitas são mais previsíveis ou menos previsíveis. As receitas mais previsíveis são das empresas de transmissão de energia. Logo após vem as empresas e geração de energia e em seguida as empresas de distribuição de energia"
+15,Pill,Mind Mapping,2,,,,,,,,Porque o setor de transmissão é o mais previsível?,,"CHATGPT    +  Estas empresas transportam a energia até o ponto de consumo, a receita tende, de fato, a ser mais previsível mesmo em cenários de deterioração econômica. Os contratos de transmissão têm duração acima de 20 anos."
+16,Pill,Mind Mapping,2,,,,,,,,"Qual a diferença entre transmissão, geração e distribuição?",,ChatGPT   +   Sem complemento
+17,Pill,Mind Mapping,2,,,,,,,,Pode me mostrar um vídeo de um minuto de como funcionam esses setores? (mostra um vídeo),,
+18,Pill,Mind Mapping,2,,,,,,,,Como funciona o setor de distribuição?,,
+19,Pill,Mind Mapping,2,,,,,,,,Como funciona o setor de geração?,,
+20,Pill,Mind Mapping,2,,,,,,,,Como funciona o setor de transmissão?,,"ChatGPT   +   “O setor de transmssão é um setor com bastante previsibilidade nas receitas. As linhas de transmissão são pagas por um valor anual fixo e reajustado pela inflação. É como se fosse um elevador, a empresa tem que deixar a linha disponível e a recebem a RAP (Receita Anual Permitida) que é estabelecida pela ANEEL."
+21,Pill,Mind Mapping,2,,,,,,,,Porque a receita da geradora é variável?,,"CHAGPT     +     As empresas geradoras, muito dependentes da matriz hidrelétrica, o principal risco é o hidrológico – como visto em 2021, com a pior crise hídrica em 91 anos no País. A capacidade de geração depende, portanto, das chuvas."
+22,Pill,Mind Mapping,2,,,,,,,,Como uma empresa consegue um contrato para fazer uma linha de transmissão?,,"CHATGPT  +  O processo começa com a licitação de concessões de instalações de transmissão pela Aneel. Os editais possibilitam que pessoas jurídicas, nacionais ou estrangeiras, e fundos de investimentos em participação, isoladamente ou em consórcio, participem da disputa. Após a realização dos leilões e a divulgação das propostas vencedoras começa a última fase de habilitação, em que são analisadas a regularidade jurídica, fiscal, técnica e econômico-financeira dos vencedores do leilão."
+23,Pill,Mind Mapping,2,,,,,,,,Por que a distribuidora é o mais difícil setor?,,A diminuição da atividade industrial pode afetar negativamente a demanda por este tipo de energia.
+24,Pill,Mind Mapping,2,,,,,,,,O que é ANEEL?,,"CHATGPT +     A Agência Nacional de Energia Elétrica (ANEEL), autarquia em regime especial vinculada ao Ministério de Minas e Energia, foi criada para regular o setor elétrico brasileiro."
+25,Pill,Mind Mapping,2,,,,,,,,Porque o setor de transmissão é o mais previsível?,,"CHATGPT    +  Estas empresas transportam a energia até o ponto de consumo, a receita tende, de fato, a ser mais previsível mesmo em cenários de deterioração econômica. Os contratos de transmissão têm duração acima de 20 anos."
+26,Pill,Mind Mapping,2,,,,,,,,O que é P/L?,,"P/L significa Preço/Lucro. Imagine uma padaria que lucra R$ 100 mil por ano. Ela está sendo vendida por R$ 500 mil. Logo seu P/L é de  R$ 500mil/R$ 100mil = 5 . Significa que vai demorar 5 anos para que o lucro da padaria pague o investimento. Quanto maior o tempo de retrono, mais cara ela está mas isso é uma regra genérica."
+27,Pill,Mind Mapping,2,,,,,,,,Me mostre o gráfico histórico do P/L.,,"Este é o gráfico histórico do P/L. O p/L atual  da PETR4 (Petrobrás)  é 1,7 e a média histórica ajustada é y,yy. (Premium)"
+28,Pill,Mind Mapping,2,,,,,,,,Qual o P/L do ativo? (contexto de ativo tudo abaixo),,"O P/L atual  da PETR4  (Petrobrás) é 1,7. Sendo que a média histórica ajustada, dos últimos 12 anos, é yy,y. (Nosso pacote premium tem a média histórica ajustada e muito mais! Assine aqui!)"
+29,Pill,Mind Mapping,2,,,,,,,,"Qual a média do P/L histórico ajustado, comparado com pares internacionais e nacionais? (Premium)",,"PL da Vale = 3,6. P/L da BHP = xx,x. P/L da Rio Tinto = y,yy Média da Vale = 9,1. Média Rio tinto = zz,z, Média BHP = ww,w.  (Assine aqui para se tornar premium e ter acesso à todo o conteúdo do chat e muito mais!)"
+30,Pill,Mind Mapping,2,,,,,,,,Qual o P/L do setor?,,"O P/L médio atual do setor de Petróleo, Gás e Combustíveis é 11,84.  O P/L da PTER4 (Petrobrás) é de 1,7."
+31,Pill,Mind Mapping,2,,,,,,,,Qual a média do P/L da bolsa?,,"O P/L da bolsa brasileira está hoje em 8,83.."
+32,Pill,Mind Mapping,2,,,,,,,,Para quê serve o histórico do P/L?,,O gráfico histórico do P/L serve para você saber se o P/L atual da emrpesa está acima ou abaixo da média. P/L mais baixo normalmente indica que a empresa está mais barata.
+33,Pill,Mind Mapping,2,,,,,,,,O que é média histórica justada e para que serve? ,,"Você compara a média do P/L histórico com o atual para saber se a empesa está barata ou cara. A média histórica ajustada descarta os anos com prejuízo e as distorções em função de anos atípicos. Por exemplo,  o P/L médio da Vale dos últimos 12 anos é de 1.295. Ajustado ele fica em 9,1 (descartados os anos 2013,2014 e 2019). Com esse valor dá para saber se ela está com p/L maior ou menor que a média histórica."
+34,Pill,Mind Mapping,2,,,,,,,,Porque existem empresas com P/L muito alto e muito baixo?,,"No exemplo da padaria, assumimos que ela vai ter um lucro estável de R$ 100 mil por ano. Se a padaria abrir filiais e aumentar o lucro, o mercado paga mais caro pela ação, levando a um P/L maior. Empresas com expectativa de crescimento futuro de lucros tem um P/L maior."
+35,Pill,Mind Mapping,2,,,,,,,,Qual a média do P/L da bolsa dos últimos 20 anos? Me apresente um gráfico.,,"A média do P/L da bolsa dos úlimos 20 anos é de x,xx. (Para ter acesso ao gráfico e muito mais, seja Premium!)"
+36,Line,,2,,,14,14,None,None,,,,
+37,Line,,2,,,14,14,None,None,,,,
+38,Line,,2,,,14,14,None,None,,,,
+39,Line,,2,,,8,8,None,None,,,,
+40,Line,,2,,,15,15,None,None,,,,
+41,Line,,2,,,20,20,None,None,,,,
+42,Line,,2,,,16,20,None,Arrow,,,,
+43,Line,,2,,,16,18,None,Arrow,,,,
+44,Line,,2,,,18,23,None,Arrow,,,,
+45,Line,,2,,,4,6,None,Arrow,,,,
+46,Line,,2,,,4,7,None,Arrow,,,,
+47,Line,,2,,,6,5,None,Arrow,,,,
+48,Line,,2,,,5,9,None,Arrow,,,,
+49,Line,,2,,,5,8,None,Arrow,,,,
+50,Line,,2,,,9,8,None,Arrow,,,,
+51,Line,,2,,,9,10,None,Arrow,,,,
+52,Line,,2,,,9,11,None,Arrow,,,,
+53,Line,,2,,,7,5,None,Arrow,,,,
+54,Line,,2,,,14,8,None,Arrow,,,,
+55,Line,,2,,,8,13,None,Arrow,,,,
+56,Line,,2,,,8,12,None,Arrow,,,,
+57,Line,,2,,,14,15,None,Arrow,,,,
+58,Line,,2,,,14,16,None,Arrow,,,,
+59,Line,,2,,,16,17,None,Arrow,,,,
+60,Line,,2,,,16,19,None,Arrow,,,,
+61,Line,,2,,,19,21,None,Arrow,,,,
+62,Line,,2,,,20,24,None,Arrow,,,,
+63,Line,,2,,,20,22,None,Arrow,,,,
+64,Line,,2,,,20,25,None,Arrow,,,,
+65,Line,,2,,,28,27,None,Arrow,,,,
+66,Line,,2,,,28,29,None,Arrow,,,,
+67,Line,,2,,,27,30,None,Arrow,,,,
+68,Line,,2,,,26,31,None,Arrow,,,,
+69,Line,,2,,,4,26,None,Arrow,,,,
+70,Line,,2,,,26,28,None,Arrow,,,,
+71,Line,,2,,,27,32,None,Arrow,,,,
+72,Line,,2,,,28,33,None,Arrow,,,,
+73,Line,,2,,,26,34,None,Arrow,,,,
+74,Line,,2,,,31,35,None,Arrow,,,,

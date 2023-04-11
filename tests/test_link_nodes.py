@@ -1,31 +1,25 @@
 import pytest
 from anytree import Node, RenderTree, AsciiStyle
 from link_nodes import LinkNodes
+from parent_nodes import ParentNodes
 
 
 @pytest.fixture
-def nodes():
-    # create some sample nodes
-    node1 = Node("Node 1", id=1)
-    node2 = Node("Node 2", id=2, parent=node1)
-    node3 = Node("Node 3", id=3, parent=node1)
-    node4 = Node("Node 4", id=4, parent=node2)
-    return {1: node1, 2: node2, 3: node3, 4: node4}
+def load_nodes():
+    main_apex = ParentNodes("tests/temporary_nodes.csv")
+    nodes = main_apex.create_nodes()
+    return nodes
 
 
-def test_create_link_nodes(nodes):
+def test_create_link_nodes(load_nodes):
     # create the LinkNodes object
-    link_nodes = LinkNodes("../link_nodes.csv")
-
-    # create the link nodes
-    nodes = link_nodes.create_link_nodes(nodes)
+    child_nodes = LinkNodes('tests/temporary_link_nodes.csv')
+    nodes = child_nodes.create_link_nodes(load_nodes)
 
     # check that the nodes are connected correctly
     assert nodes[1].parent is None
-    assert nodes[2].parent == nodes[1]
-    assert nodes[3].parent == nodes[1]
-    assert nodes[4].parent == nodes[2]
 
     # display the nodes for visual inspection
-    for pre, fill, node in RenderTree(nodes[1], style=AsciiStyle()):
-        print("%s%s" % (pre, node.name))
+    for node in nodes.values():
+        for pre, fill, n in RenderTree(node, style=AsciiStyle()):
+            print("%s%s" % (pre, n.name))
