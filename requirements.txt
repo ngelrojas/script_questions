@@ -6,3 +6,5 @@ sklearn
 matplotlib
 anytree
 pytest
+flake8
+black

@@ -9,9 +9,9 @@ class Menu:
             return
         self._print_children_labels(children)
         choice = self._get_choice(children)
-        if choice == 'b':
+        if choice == "b":
             return
-        elif choice == 'e':
+        elif choice == "e":
             self._exit()
         selected_node = self._get_selected_node(children, choice)
         if not selected_node:
@@ -37,5 +37,5 @@ class Menu:
         return None
 
     def _exit(self):
-        print('saindo...')
+        print("saindo...")
         exit()

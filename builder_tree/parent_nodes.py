@@ -1,18 +1,14 @@
 import csv
 from anytree import Node, RenderTree, AsciiStyle
 
-#
-#
-# import csv
-# from anytree import Node, RenderTree, AsciiStyle
-class ParentNodes:
 
+class ParentNodes:
     def __init__(self, node_file, answers_file_csv):
         self.node_file = node_file
         self.answers_file_csv = answers_file_csv
 
     def create_nodes(self):
-        with open(self.node_file, 'r') as csvfile:
+        with open(self.node_file, "r") as csvfile:
             csvreader = csv.reader(csvfile)
             # skip the header row
             next(csvreader)
@@ -28,7 +24,7 @@ class ParentNodes:
         return nodes
 
     def add_answer_nodes(self, nodes):
-        with open(self.answers_file_csv, 'r') as csvfile:
+        with open(self.answers_file_csv, "r") as csvfile:
             csvreader = csv.reader(csvfile)
             # skip the header row
             next(csvreader)
