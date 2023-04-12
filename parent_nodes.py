@@ -35,7 +35,7 @@ class ParentNodes:
             for row in csvreader:
                 # get the ID of the parent node and the label of the answer
                 parent_id = int(row[0])
-                answer_label = row[1]
+                answer_label = "[R]: " + row[1]
                 # create a new node for the answer
                 answer_node = Node(answer_label, id=parent_id)
                 # get the parent node from the dictionary
