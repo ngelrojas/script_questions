@@ -15,10 +15,12 @@ source backend/bin/activate
 pip install -r requirements.txt
 ```
 
-#### 4. run the test script using
+#### 4. run the test script, be sure that file automate.sh have permission to execute
 ```shell
-pytest --pyargs tests
+-> chmod +x automate.sh
+-> ./automate.sh
 ```
+
 
 #### 5. run the script using
 -- environment must be activated
@@ -26,6 +28,6 @@ pytest --pyargs tests
 pthon3 main.py
 ```
 
-#### 6. import .csv file and change name to "data_nodes.csv" put it in the same folder as the script
+#### 6. import your .csv file in folder nodes_csv and change name to "data_nodes.csv"
 #### 7. if you .csv file has a different name headers, change the name in load_csv.py, 
 #### in lines show this message # CHANGE HERE

@@ -2,7 +2,6 @@ import pandas as pd
 
 
 class LoadCsv:
-
     def __init__(self, origen_csv):
         self.origen_csv = origen_csv
 

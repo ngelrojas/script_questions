@@ -2,13 +2,12 @@ import csv
 
 
 class LinkNodes:
-
     def __init__(self, link_node_file):
         self.link_node_file = link_node_file
 
     def create_link_nodes(self, nodes):
         # read the links from the CSV file and connect the nodes
-        with open(self.link_node_file, 'r') as csvfile:
+        with open(self.link_node_file, "r") as csvfile:
             csvreader = csv.reader(csvfile)
             # skip the header row
             next(csvreader)
