@@ -15,7 +15,7 @@ class Menu:
             self._exit()
         selected_node = self._get_selected_node(children, choice)
         if not selected_node:
-            print("Invalid choice. Please try again.")
+            print("Opcao invalida. tente com outra porfavor!.")
             self.print_menu()
         else:
             Menu(selected_node).print_menu()
@@ -28,7 +28,7 @@ class Menu:
             print(f"\t({child.id}):{child.name} ")
 
     def _get_choice(self, children):
-        return input("Selecione a seguiente opcao ou ('b' para voltar e 'e' pasa sair ): ")
+        return input("Selecione a seguiente opcao ou ('b' para voltar, 'E' pasa sair ): ")
 
     def _get_selected_node(self, children, choice):
         for child in children:

@@ -20,6 +20,12 @@ pip install -r requirements.txt
 pytest --pyargs tests
 ```
 
-#### 4. import .csv file and change name to "data_nodes.csv" put it in the same folder as the script
-#### 5. if you .csv file has a different name headers, change the name in load_csv.py, 
+#### 5. run the script using
+-- environment must be activated
+```shell
+pthon3 main.py
+```
+
+#### 6. import .csv file and change name to "data_nodes.csv" put it in the same folder as the script
+#### 7. if you .csv file has a different name headers, change the name in load_csv.py, 
 #### in lines show this message # CHANGE HERE
