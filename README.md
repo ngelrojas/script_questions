@@ -22,10 +22,11 @@ pip install -r requirements.txt
 ```
 
 
-#### 5. run the script using
+#### 5. run the script using app.sh, be sure that file app.sh have permission to execute
 -- environment must be activated
 ```shell
-pthon3 main.py
+-> chmod +x app.sh
+-> ./app.sh
 ```
 
 #### 6. import your .csv file in folder nodes_csv and change name to "data_nodes.csv"
