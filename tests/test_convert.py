@@ -5,7 +5,7 @@ from convert_csv import CSVConverter
 
 def test_csv_converter(tmpdir):
     # create a test input CSV file
-    input_data = [['Line Source', 'Line Destination'], ['4.0', '5.0']]
+    input_data = [["Origem da linha", "Destino da linha"], ['4.0', '5.0']]
     input_file = tmpdir.join('test_input.csv')
     with open(str(input_file), 'w', newline='') as f:
         writer = csv.writer(f)
@@ -21,6 +21,6 @@ def test_csv_converter(tmpdir):
     with open(str(output_file), 'r', newline='') as f:
         reader = csv.reader(f)
         header_row = next(reader)
-        assert header_row == ['Line Source', 'Line Destination']
+        assert header_row == ["Origem da linha", "Destino da linha"]
         data = [row for row in reader]
         assert data == [['4', '5']]

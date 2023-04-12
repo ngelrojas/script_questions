@@ -13,7 +13,7 @@ def test_create_nodes():
     node_file = 'tests/test_nodes.csv'
     with open(node_file, 'w', newline='') as f:
         writer = csv.writer(f)
-        writer.writerow(['Line Source', 'Line Destination'])
+        writer.writerow(["Origem da linha", "Destino da linha"])
         writer.writerows(input_data)
 
     # create a ParentNodes instance and call create_nodes method
