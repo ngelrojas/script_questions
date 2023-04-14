@@ -2,6 +2,9 @@ backend
 .vscode
 .idea
 tests/.pytest_cache/*
+utils_csv/__pycache__/*
+builder_tree/__pycache__/*
+menus/__pycache__/*
 data_nodes.csv
 link_nodes.csv
 nodes.csv

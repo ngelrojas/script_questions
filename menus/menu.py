@@ -21,11 +21,14 @@ class Menu:
             Menu(selected_node).print_menu()
 
     def _print_node_label(self, indent):
-        print(f"{indent}{self.node.id}: {self.node.name}")
+        print(f"\n{indent}({self.node.id}): {self.node.name}")
 
     def _print_children_labels(self, children):
         for child in children:
-            print(f"\t({child.id}):{child.name} ")
+            if "[R]" in child.name:
+                print(f"\n{child.name}\n")
+            else:
+                print(f"({child.id}): {child.name} \n")
 
     def _get_choice(self, children):
         return input("Selecione a seguiente opcao ou ('b' para voltar, 'E' pasa sair ): ")

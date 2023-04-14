@@ -1,34 +1,36 @@
 ## setup
 
-#### 1. create a python environment using
+## SO WINDOWS
+
+#### 1. colocar o arquivo descarregado .csv na pasta nodes_csv/, que esta dentro do projeto atual, com o nome data_nodes.csv, pode sobre escrever o arquivo existente
+#### 2. executar o arquivo install_win.sh, (este arquivo so executara uma vez)
 ```shell
-python3 -m venv backend
+bash install_win.sh
 ```
 
-#### 2. activate the environment using
+#### 3. executar o arquivo app_win.sh
 ```shell
-source backend/bin/activate
+bash app_win.sh
+```
+#### 4. depois do punto 3, so executar sempre o arquivo app_win.sh
+
+# SO linux or Mac
+
+#### 1. colocar o arquivo descarregado .csv na pasta nodes_csv/, que esta dentro do projeto atual, com o nome data_nodes.csv, pode sobre escrever o arquivo existente
+
+#### 2. usando os camandos abaixo, dar permicoes aos arquivos install.sh e app.sh
+```shell
+chmod +x install.sh
+chmod +x app.sh
 ```
 
-#### 3 . install requirements.txt using
+#### 3. executar o aqrquivo install.sh, (este arquivo so executara uma vez)
 ```shell
-pip install -r requirements.txt
+./install.sh
 ```
 
-#### 4. run the test script, be sure that file automate.sh have permission to execute
+#### 4. executar o arquivo app.sh
 ```shell
--> chmod +x automate.sh
--> ./automate.sh
+./app.sh
 ```
-
-
-#### 5. run the script using app.sh, be sure that file app.sh have permission to execute
--- environment must be activated
-```shell
--> chmod +x app.sh
--> ./app.sh
-```
-
-#### 6. import your .csv file in folder nodes_csv and change name to "data_nodes.csv"
-#### 7. if you .csv file has a different name headers, change the name in load_csv.py, 
-#### in lines show this message # CHANGE HERE
+#### 5. depois do punto 4, so executar sempre o arquivo app.sh
