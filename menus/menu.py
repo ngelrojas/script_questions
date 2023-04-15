@@ -28,10 +28,10 @@ class Menu:
             if "[R]" in child.name:
                 print(f"\n{child.name}\n")
             else:
-                print(f"({child.id}): {child.name} \n")
+                print(f"({child.id}): {child.name}")
 
     def _get_choice(self, children):
-        return input("Selecione a seguiente opcao ou ('b' para voltar, 'E' pasa sair ): ")
+        return input("\nSelecione a seguiente opcao ou ('b' para voltar, 'E' pasa sair ): ")
 
     def _get_selected_node(self, children, choice):
         for child in children:
